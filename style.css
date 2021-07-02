@@ -313,7 +313,7 @@ main {
 .block--text-box h3 span {
   font-weight: 700;
   color: #160d63;
-  text-shadow: 1px 1px 15px #c24e31;
+  text-shadow: 1px 1px 15px #ec97d7;
 }
 
 .block--text-box p {
@@ -366,19 +366,28 @@ main {
 }
 
 .block:nth-of-type(even) .block--img-box::after {
-  content: "";
-  position: absolute;
-  left: 5%;
-  top: 5%;
-  width: 90%;
-  height: 90%;
-  background-color: #6d1e1e;
-  z-index: -1;
+  background-color: #1e6d62;
+}
+
+.block:nth-of-type(3) .block--img-box::after {
+  background-color: #e23119;
 }
 
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.name::before {
+  content: "\f433";
+  padding-right: 4px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: #160d63;
 }
 /*# sourceMappingURL=style.css.map */
